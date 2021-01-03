@@ -1,8 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package moneycalculator.persistence.rest;
 
 import java.io.IOException;
@@ -12,12 +7,7 @@ import moneycalculator.model.Currency;
 import moneycalculator.model.ExchangeRate;
 import moneycalculator.persistence.ExchangeRateLoader;
 
-/**
- *
- * @author natanaelmartinezmorales
- */
 public class RestExchangeRateLoader implements ExchangeRateLoader {
-
     @Override
     public ExchangeRate load(Currency from, Currency to) {
         try {
@@ -38,5 +28,4 @@ public class RestExchangeRateLoader implements ExchangeRateLoader {
         int length = is.read(buffer);
         return new String(buffer, 0, length);
     }
-    
 }

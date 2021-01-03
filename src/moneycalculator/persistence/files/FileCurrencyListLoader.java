@@ -1,8 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package moneycalculator.persistence.files;
 
 import java.io.BufferedReader;
@@ -14,12 +9,7 @@ import java.util.List;
 import moneycalculator.model.Currency;
 import moneycalculator.persistence.CurrencyListLoader;
 
-/**
- *
- * @author natanaelmartinezmorales
- */
 public class FileCurrencyListLoader implements CurrencyListLoader {
-
     private final String filename;
 
     public FileCurrencyListLoader(String filename) {
@@ -46,5 +36,4 @@ public class FileCurrencyListLoader implements CurrencyListLoader {
         String[] split = line.split(",");
         return new Currency(split[0], split[1], split[2]);
     }
-    
 }

@@ -1,14 +1,5 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package moneycalculator.model;
 
-/**
- *
- * @author natanaelmartinezmorales
- */
 public class Money {
     private final double amount;
     private final Currency currency;
@@ -25,6 +16,4 @@ public class Money {
     public Currency getCurrency() {
         return currency;
     }
-    
-    
 }

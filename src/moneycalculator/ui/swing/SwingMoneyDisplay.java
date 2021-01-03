@@ -1,8 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package moneycalculator.ui.swing;
 
 import javax.swing.JLabel;
@@ -10,12 +5,7 @@ import javax.swing.JPanel;
 import moneycalculator.model.Money;
 import moneycalculator.ui.MoneyDisplay;
 
-/**
- *
- * @author natanaelmartinezmorales
- */
-public class SwingMoneyDisplay extends JPanel implements MoneyDisplay{
-
+public class SwingMoneyDisplay extends JPanel implements MoneyDisplay {
     private Money money;
 
     @Override
@@ -34,5 +24,4 @@ public class SwingMoneyDisplay extends JPanel implements MoneyDisplay{
     private JLabel amount() {
         return new JLabel(money.getCurrency().getCode());
     }
-
 }

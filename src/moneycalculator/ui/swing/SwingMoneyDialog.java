@@ -1,8 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package moneycalculator.ui.swing;
 
 import java.awt.Component;
@@ -19,12 +14,7 @@ import moneycalculator.model.Currency;
 import moneycalculator.model.Money;
 import moneycalculator.ui.MoneyDialog;
 
-/**
- *
- * @author natanaelmartinezmorales
- */
 public class SwingMoneyDialog extends JPanel implements MoneyDialog {
-    
     private final Currency[] currencies;
     private Currency currency;
     private String amount;
@@ -34,7 +24,6 @@ public class SwingMoneyDialog extends JPanel implements MoneyDialog {
         this.add(amount());
         this.add(currency());
     }
-
     
     @Override
     public Money get() {
@@ -88,11 +77,9 @@ public class SwingMoneyDialog extends JPanel implements MoneyDialog {
                     amount = document.getText(0, document.getLength());
                 } 
                 catch (BadLocationException ex) {
-                    
+                    System.out.println(ex.getMessage());
                 }
             }
-            
         };
     }
-    
 }

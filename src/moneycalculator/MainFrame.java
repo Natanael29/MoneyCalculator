@@ -1,9 +1,5 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package moneycalculator;
+
 import java.awt.BorderLayout;
 import java.awt.Component;
 import java.awt.event.ActionEvent;
@@ -19,10 +15,7 @@ import moneycalculator.ui.MoneyDialog;
 import moneycalculator.ui.MoneyDisplay;
 import moneycalculator.ui.swing.SwingMoneyDialog;
 import moneycalculator.ui.swing.SwingMoneyDisplay;
-/**
- *
- * @author natanaelmartinezmorales
- */
+
 public class MainFrame extends JFrame {
 
     private final Map<String, Command> commands = new HashMap<>();

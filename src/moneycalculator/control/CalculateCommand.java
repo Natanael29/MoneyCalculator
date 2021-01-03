@@ -1,8 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package moneycalculator.control;
 
 import moneycalculator.model.Currency;
@@ -11,12 +6,7 @@ import moneycalculator.persistence.ExchangeRateLoader;
 import moneycalculator.ui.MoneyDialog;
 import moneycalculator.ui.MoneyDisplay;
 
-/**
- *
- * @author natanaelmartinezmorales
- */
 public class CalculateCommand implements Command {
-
     private final MoneyDialog moneyDialog;
     private final MoneyDisplay moneyDisplay;
     private final ExchangeRateLoader loader;
@@ -45,5 +35,4 @@ public class CalculateCommand implements Command {
     private double rateOf(Currency currency) {
         return loader.load(currency, eur).getAmount();
     }
-    
 }
